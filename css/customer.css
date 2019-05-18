@@ -1,0 +1,133 @@
+/*about*/
+.bg-darkgrey{
+    background-color: #a7a7a7;
+}
+.header{
+    background-image:url("../img/customer/bg.jpg"),linear-gradient(to top , rgba(0, 0, 0, 0.966), rgba(0, 0, 0, 0.1));
+}
+.header .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+text-align: center;
+width: 50%;
+height: 50vw;
+margin: 0 auto;
+}
+.header .content h1{
+    margin-bottom: 4vh;
+}
+.end{
+    padding: 2vh;
+margin: 0 auto;
+width: 90%;
+}
+/*about us*/
+.OurCustomers{
+    padding: 2vw 0;
+    text-align: center;
+}
+.OurCustomers p,.comment p{
+    margin: 2vw 0;
+}
+li{
+    cursor: pointer;
+}
+.OurCustomers .customerMenu li {
+    margin-left: 0;
+    font-family: md;
+    display: inline-block;
+    font-size: 14px;
+}
+.customerMenu li a{
+     padding: 0.5vw 2vw;
+    border-radius: 20px;
+}
+ .customerMenu li a:hover{
+    background-color: #87a74d;
+    color: #fff;
+}
+.customerMenu li a:active{
+    color: aqua;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    align-items: flex-end;
+}
+.slider{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+ }
+.conslider{
+    width: 200%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 4vw 0;
+  }
+  .conslider img{
+    margin: 0 1.25%;
+    width: 10%;
+ }
+ .left{
+    animation: sliderLogosleft 7s linear infinite;
+ }
+ .right{
+    animation: sliderLogosright 7s linear infinite;
+
+ }
+ @keyframes sliderLogosleft{
+    0% { left: 0%; }
+    25% { left: -25%; }
+    50% { left: -50%; }
+    75% { left: -75%; }
+    100% { left: -100%; }
+ }
+ @keyframes sliderLogosright{
+    0% { left: -100%; }
+    25% { left: -75%; }
+    50% { left: -50%; }
+    75% { left: -25%; }
+    100% { left: 0%; }
+ }
+.comment{
+    display: grid;
+    grid-template-columns: 90% 10%;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 6vw;
+}
+.comment>img{
+    padding:0 0 1vw 1vw;
+}
+ .comment p::after{
+    width: 20px;
+    content: "";
+    border-bottom: 1px solid #fff;
+    display: block;
+    margin: 1vw auto;
+}
+h3{
+    font-family: th;
+}
+.commentText p, .comment h3 {
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.middle{
+    text-align: center;
+}
+.middle img:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    margin: 0 1.5vw;
+}
+.middle img{
+    border-radius: 50%;
+    opacity: 0.5;
+}
+

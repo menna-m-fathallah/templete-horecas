@@ -1,0 +1,240 @@
+
+.header .content {
+    padding:20vw 0 7vw 0;
+    text-align: center;
+}
+.header .content>img{
+width: 39vw;
+}
+.header .content .list img{
+    border-radius: 50% ;
+    border: 3px solid rgba(255, 255, 255, 1);
+}
+.header .content .list{
+    margin: 7vw 0px 4vw 0px;
+}
+.header .content .list .item h2,.header .content .list p{
+    margin: 2vw 0px;
+}
+/*about*/
+
+.aboutUs{
+    padding: 4vw 0vh 5vw 0;
+}
+.aboutUs>h2{
+    text-align: center;
+    margin-bottom:4.5vw;
+}
+.aboutUs .list .item h2{
+    margin: 2vw 0px 1.2vw 0;
+}
+.aboutUs .list .item p{
+    width: 95%;
+    margin-bottom: 2vw;
+}
+.aboutUs i{
+    color: rgba(238, 255, 0, 0.9);
+}
+.aboutUs .image>img{
+    width: 100%;
+}
+.image{
+    font-size: 0;
+    position: relative;
+    text-align: center;
+}
+.image:hover .overlay{
+    opacity: 1;
+}
+.overlay img{
+    object-fit: cover;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+}
+/*newSletter*/
+.newSletter{
+    padding: 4.3vw 0;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+    text-align: center;
+    background-image: url(../img/home/bg.jpg),linear-gradient(rgba(0, 0, 0, .1),rgba(0, 0, 0, .1)); 
+}
+.newSletter p {
+    margin: 3vh 0 9vh 0;
+}
+.newSletter input[type="email"] {
+    background: rgba(255,255,255,.5);
+    font-family: cn;
+    padding: 0.7vw 1.5vw;
+    width: 20vw;
+    font-size: 1rem;
+    border-radius: 20px 0px 0px 20px ;
+    outline: 0;
+    color: white;
+    border: 1px solid #fff;
+}
+.newSletter ::placeholder {
+    font-family: cn;
+    color: white;
+    padding: 10px;
+}
+.newSletter input[type="submit"] {
+    font-family: bd;
+    font-size: 1rem;
+    border: 0;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 10vw;
+    padding: 0.85vw 1.5vw;
+    position: relative;
+    right: 25px;
+}
+.NewtoiHoreca{
+    padding: 4vw 0;
+}
+.NewtoiHoreca h2{
+    font-family: bd;
+}
+.NewtoiHoreca .list-2 p{
+    margin: 2vh 0;
+}
+.NewtoiHoreca .list-2 .image:first-child{
+    display: none;
+}
+.NewtoiHoreca .list-2{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3vw;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.NewtoiHoreca .list-2 img{
+    width: 20vw;
+    object-fit: cover;
+    border-radius: 50%;
+    height: 20vw;
+    border: 4px solid #d75d0e;
+}
+.NewtoiHoreca .list-2 img.border-green {
+    border: 4px solid #87a74d;
+}
+.newSletter{
+    text-align: center;
+}
+.newSletter p{
+    padding: 1vw 0 6vw 0;
+    width: 80%;
+    margin: 0 auto;
+}
+/*Our Brands*/
+.OurBrands{
+    padding: 2vw 0;
+    text-align: center;
+}
+.OurBrands h2{
+    margin: 2vw 0;
+}
+.slider{
+   padding: 1.4rem 0 2.5rem;
+   width: 70%;
+   margin: 0 auto;
+   overflow: hidden;
+   
+}
+.slider h2{
+   font-size: 1rem;
+   text-align: center;
+   color: #333333;
+   font-family: HelveticaNeueLTStd-Md;
+}
+.conslider{
+  width: 300%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  animation: sliderLogos 7s linear infinite;
+  animation-fill-mode: both;
+}
+@keyframes sliderLogos{
+   0% { left: 0%; }
+   13% { left: 0%; }
+   17% { left: -16.7%; }
+   30% { left: -16.7%; }
+   34% { left: -33.4%; }
+   47% { left: -33.4%; }
+   51% { left: -50.1%; }
+   64% { left: -50.1%; }
+   68% { left: -66.8%; }
+   81% { left: -66.8%; }
+   85% { left: -83.5%; }
+   96% { left: -83.5%; }
+   100% { left: -100%; }
+} 
+
+.conslider img{
+   margin: 0 0.6%;
+   width: 4.4%;
+}
+ /*===========tab================*/
+ @media screen and (min-width:701px) and (max-width:1024px){
+
+    .header .list .item {
+        justify-content: space-between;
+       flex-direction: row;
+       }
+       .header .list .item img{
+         margin-right: 2vw;
+       }
+       .header .content .list {
+         grid-template-columns: 1fr;
+       }
+       .header .list{
+        text-align: left;
+       }
+}
+/*==============mob==============*/
+@media screen and (max-width:700px){
+   
+    .list,.NewtoiHoreca .list-2{
+        grid-template-columns: 1fr;
+        grid-gap: 5vw;
+    }
+    .NewtoiHoreca .list-2 .image:first-child{
+        display: unset;
+    }
+    .NewtoiHoreca .list-2 :nth-child(3){
+        display: none;
+    }
+    .NewtoiHoreca .list-2 .image img{
+        width: 40vw;
+        height: 40vw;
+    }
+    .newSletter input[type="submit"]{
+        width: 20vw;
+    }
+    .newSletter input[type="email"]{
+        width: 40vw
+    }
+    .NewtoiHoreca{
+        text-align: center;
+    }
+    .header .content .list p {
+        width: 70%;
+        margin: 0 auto;
+    }
+}

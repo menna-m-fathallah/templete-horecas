@@ -1,0 +1,241 @@
+/*about*/
+h5{
+    font-family: bd;
+}
+p{
+    font-family: cn;
+}
+.bg-white{
+    background-color: #fff;
+}
+.header{
+    background-image:url("../img/blog/bg.jpg"),linear-gradient(to top , rgba(0, 0, 0, 0.966), rgba(0, 0, 0, 0.1));
+}
+.header .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+text-align: center;
+width: 50%;
+height: 50vw;
+margin: 0 auto;
+}
+.header .content h1{
+    margin-bottom: 4vh;
+}
+.end{
+    padding: 2vh;
+margin: 0 auto;
+width: 90%;
+}
+/*main*/
+.main{
+    padding: 5vw;
+    display: grid;
+    grid-template-columns: 1.5fr 4.4fr 1.5fr;
+    grid-gap: 2vw;
+    text-align: center;
+}
+.posts>p{
+    padding: 1vw 2vw;
+    border: 1px solid #999999;
+    display: inline-block;
+}
+.mainpost{
+    margin-bottom: 4vw;
+    background-image: url(../img/blog/g1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6vw 0;
+}
+.mainpost .post{
+    width: 40%;
+    margin: 0 auto;
+}
+.posts .upper{
+    font-family: md;
+}
+.firstside,.secondside{
+    padding: 2vw 0;
+}
+.main .posts img {
+    width: 100%;
+}
+.twoside{
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    grid-gap: 2vw; 
+}
+.post {
+    text-align: center;
+    padding: 1vw;
+    margin-bottom: 2vw;
+    position: relative;
+}
+.left{
+    text-align: left;
+}
+.comment{
+    display: grid;
+    grid-template-columns: 80% 10%;
+    justify-content: space-between;
+}
+.comment .txt{
+    text-align: left;
+    margin-bottom: 1vw;
+}
+.post p{
+     margin:1vw 0;
+}
+.triangle{
+width: 0;
+height: 0;
+position: absolute;
+border-style: solid;
+}
+.firstside .triangle::after{
+     width: 5px;
+     height: 5px;
+     margin-left: calc(2vw - 12px);
+     border-radius: 50%;
+     background-color: #999999;
+    content:"";
+    display: block;
+}
+.firstside .triangle{
+    right: -10px;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+}
+.secondside .triangle{
+    left: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+.twoside .box::after{
+    margin: 2vw 0;
+    content:"";
+    border-bottom: 1px dotted #999999;
+    display: block;
+}
+.icons{
+    text-align: left;
+display: none;
+}
+.icons i{
+    text-align: center;
+    border: 1px dotted #999999;
+    width: 2vw;
+    height: 2vw;
+    line-height: 2vw;
+    border-radius: 50%;
+    font-size: 1vw;
+}
+
+.share{
+    outline: 0;
+}
+.share:focus{
+    color: #87a74d;
+}
+.share:focus + .icons{
+    display: unset;
+}
+.vline{
+    background: #999999;
+}
+.sidemenu input{
+    border: 0;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    padding: 0.5vw;
+    color: #da7c4b;
+}
+.sidemenu ::placeholder {
+    color: #da7c4b;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.right{
+    text-align: right;
+}
+.inputwithicon i{
+    padding: 0.5vw;
+    position: relative;
+    top: -2vw;
+    color: #da7c4b;
+}
+.sidemenu .post:nth-child(2){
+    padding: 0;
+}
+.sidemenu .item{
+    justify-content: space-between;
+    border-bottom: 2px solid #f3f3f3;
+}
+.grid{
+display:grid;
+grid-template-columns: 41% 57%;
+}
+.grid img{
+    width: 100%;
+}
+.sidemenu .item:nth-child(4){
+    border-bottom: 0;
+}
+.item img{
+    margin: 1vw 1vw 1vw 0;
+}
+@media screen and (min-width:701px) and (max-width:1024px){
+    /* .twoside{
+
+        grid-template-columns: 1fr;
+    }
+   .secondside .triangle{
+    left:100%;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+   }
+   .firstside .triangle::after{
+   display: none;
+}
+.firstside {
+    padding-right: 0;
+    border-right: 0;} */
+    .main{
+        grid-template-columns:2fr 5fr;
+    }
+
+}
+@media screen and (max-width:700px){
+    html{
+        font-size: 7px;
+    }
+    .main{
+        grid-template-columns:2.5fr 4fr;
+    }
+    .twoside{
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+    .firstside .post:nth-last-child(1){
+        margin-bottom: 0;
+    }
+    .vline{
+        display: none;
+    }
+    .secondside{
+        padding: 0;
+    }
+    .triangle{
+        display: none;
+    }
+       .firstside .triangle::after{
+       display: none;
+   }
+   .firstside {
+    padding-right: 0;
+    border-right: 0;}
+}
